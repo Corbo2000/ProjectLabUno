@@ -1,0 +1,142 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 16544
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jan 29 17:09:15 CST 2021
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Aidan
+User home directory: C:/Users/Aidan
+User working directory: C:/Users/Aidan/Documents/vivado/ProjectLabUno
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Aidan/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Aidan/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Aidan/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Aidan/Documents/vivado/ProjectLabUno/vivado.log
+Vivado journal file location: 	C:/Users/Aidan/Documents/vivado/ProjectLabUno/vivado.jou
+Engine tmp dir: 	C:/Users/Aidan/Documents/vivado/ProjectLabUno/.Xil/Vivado-16544-DESKTOP-8K8TP56
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 980 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Aidan\Documents\vivado\ProjectLabUno\miniProject1_PL1.xpr. Version: Vivado v2020.2 
+// WARNING: HEventQueue.dispatchEvent() is taking  1073 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 980 MB. GUI used memory: 46 MB. Current time: 1/29/21, 5:09:16 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Xilinx/Vivado-Workspaces/miniProject2.0_PL1/ProjectLabUno' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+100041kb) [00:00:40]
+// [Engine Memory]: 980 MB (+875870kb) [00:00:40]
+// WARNING: HEventQueue.dispatchEvent() is taking  7717 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: miniProject1_PL1; location: C:/Users/Aidan/Documents/vivado/ProjectLabUno; part: xc7a35ticpg236-1L
+// Tcl Message: open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1005.273 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 106 MB (+3107kb) [00:00:54]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// [GUI Memory]: 114 MB (+3496kb) [00:00:59]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (miniProjectSource.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniProjectSource (miniProjectSource.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniProjectSource (miniProjectSource.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, miniProjectSource (miniProjectSource.v)]", 1, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1800 ms.
+selectCodeEditor("miniProjectSource.v", 50, 149); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  3561688 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 980 MB. GUI used memory: 74 MB. Current time: 1/29/21, 6:09:46 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3562797 ms. Increasing delay to 10688391 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1179 ms.
+// Elapsed time: 3609 seconds
+selectCodeEditor("miniProjectSource.v", 434, 211); // bP
+selectCodeEditor("miniProjectSource.v", 334, 298); // bP
+selectCodeEditor("miniProjectSource.v", 387, 185); // bP
+selectCodeEditor("miniProjectSource.v", 287, 250); // bP
+// Elapsed time: 169 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 4, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 4, false); // D
+// [GUI Memory]: 121 MB (+1041kb) [01:04:25]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 4, false, false, false, false, false, true); // D - Double Click
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 380ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 374 seconds
+selectCodeEditor("Basys3_Master.xdc", 6, 55); // bP
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1194 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 874 ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 129 MB (+2302kb) [01:15:59]
