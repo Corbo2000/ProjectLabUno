@@ -21,6 +21,28 @@
 
 
 module miniProjectSource(
-
+    input clock,
+    output reg a,b,c,d,e,f
+    
     );
+    reg temp = 1'b1;
+//always @ (posedge clock)
+   // begin
+    
+    //temp = ~temp;
+  //  end
+    
+always @ (*)
+    begin
+    a <= temp;
+    b <= temp;
+    c <= temp;
+    d <= temp;
+    e <= temp;
+    f <= temp;
+    end
+    
 endmodule
+
+
+
