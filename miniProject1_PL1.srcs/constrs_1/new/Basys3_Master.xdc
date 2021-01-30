@@ -9,10 +9,10 @@ set_property PACKAGE_PIN W5 [get_ports clock]
 	create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clock]
  
 # Switches
-set_property PACKAGE_PIN V17 [get_ports {sw[0]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {sw[0]}]
-set_property PACKAGE_PIN V16 [get_ports {sw[1]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {sw[1]}]
+set_property PACKAGE_PIN V17 [get_ports {in0}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {in0}]
+set_property PACKAGE_PIN V16 [get_ports {in1}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {in1}]
 #set_property PACKAGE_PIN W16 [get_ports {sw[2]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[2]}]
 #set_property PACKAGE_PIN W17 [get_ports {sw[3]}]					
@@ -197,7 +197,7 @@ set_property PACKAGE_PIN L17 [get_ports {e}]
 set_property PACKAGE_PIN M19 [get_ports {f}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {f}]
 ##Sch name = JC9
-set_property PACKAGE_PIN P17 [get_ports {g]}]					
+set_property PACKAGE_PIN P17 [get_ports {g}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {g}]
 ##Sch name = JC10
 set_property PACKAGE_PIN R18 [get_ports {h}]					

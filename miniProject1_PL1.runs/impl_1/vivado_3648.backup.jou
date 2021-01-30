@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jan 29 22:04:06 2021
-# Process ID: 14696
+# Start of session at: Fri Jan 29 22:09:51 2021
+# Process ID: 3648
 # Current directory: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1
 # Command line: vivado.exe -log miniProjectSource.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source miniProjectSource.tcl -notrace
 # Log file: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.vdi

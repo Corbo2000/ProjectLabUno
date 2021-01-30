@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 29 21:40:34 2021
+# Process ID: 10652
+# Current directory: C:/Users/golde/Documents/GitHub/ProjectLabUno
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14212 C:\Users\golde\Documents\GitHub\ProjectLabUno\miniProject1_PL1.xpr
+# Log file: C:/Users/golde/Documents/GitHub/ProjectLabUno/vivado.log
+# Journal file: C:/Users/golde/Documents/GitHub/ProjectLabUno\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Aidan/Documents/vivado/ProjectLabUno' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.gen/sources_1', nor could it be found using path 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/golde/Documents/miniProject1_PL1/miniProject1_PL1.ip_user_files', nor could it be found using path 'C:/Users/Aidan/Documents/miniProject1_PL1/miniProject1_PL1.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 981.809 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Jan 29 21:51:29 2021] Launched synth_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Jan 29 21:52:56 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jan 29 21:54:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jan 29 21:55:26 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 981.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2363.770 ; gain = 1381.961
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jan 29 21:57:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Jan 29 21:58:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 2
+[Fri Jan 29 21:59:27 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jan 29 22:00:48 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Jan 29 22:02:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Jan 29 22:03:58 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jan 29 22:05:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 29 22:06:04 2021...
