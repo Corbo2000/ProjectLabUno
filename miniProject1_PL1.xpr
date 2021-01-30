@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/golde/Documents/GitHub/ProjectLabUno/miniProject1_PL1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0fdae8646eeb412588fff1008caa3e0f"/>

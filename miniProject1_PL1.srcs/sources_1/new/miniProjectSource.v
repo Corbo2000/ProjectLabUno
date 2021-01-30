@@ -22,7 +22,7 @@
 
 module miniProjectSource(
     input clock,
-    output reg a,b,c,d,e,f
+    output reg a,b,c,d,e,f,g,h
     
     );
     reg temp = 1'b1;
@@ -40,6 +40,8 @@ always @ (*)
     d <= temp;
     e <= temp;
     f <= temp;
+    g <= temp;
+    h <= temp;
     end
     
 endmodule
