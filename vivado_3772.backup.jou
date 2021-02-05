@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb  2 14:17:37 2021
+# Process ID: 3772
+# Current directory: C:/Users/Aidan/Documents/vivado/ProjectLabUno
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18620 C:\Users\Aidan\Documents\vivado\ProjectLabUno\miniProject1_PL1.xpr
+# Log file: C:/Users/Aidan/Documents/vivado/ProjectLabUno/vivado.log
+# Journal file: C:/Users/Aidan/Documents/vivado/ProjectLabUno\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.xprupdate_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+file mkdir C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v w ]
+add_files -fileset sim_1 C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v
+update_compile_order -fileset sim_1
+set_property used_in_implementation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_synthesis false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_synthesis true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_synthesis false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source PWM_test.tcl
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 31
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 32
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 31
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 31
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 31
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 31
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 32
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 32
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 32
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source PWM_test.tcl
+close_sim
+set_property used_in_implementation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+set_property used_in_synthesis false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+update_compile_order -fileset sources_1
+set_property used_in_synthesis true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_implementation true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+launch_simulation
+source PWM_test.tcl
+close_sim
+set_property used_in_synthesis true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+set_property used_in_implementation true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+update_compile_order -fileset sources_1
+set_property used_in_implementation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+set_property used_in_simulation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_hw_manager
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

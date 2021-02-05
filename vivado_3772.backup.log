@@ -1,0 +1,754 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb  2 14:17:37 2021
+# Process ID: 3772
+# Current directory: C:/Users/Aidan/Documents/vivado/ProjectLabUno
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18620 C:\Users\Aidan\Documents\vivado\ProjectLabUno\miniProject1_PL1.xpr
+# Log file: C:/Users/Aidan/Documents/vivado/ProjectLabUno/vivado.log
+# Journal file: C:/Users/Aidan/Documents/vivado/ProjectLabUno\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.xprIINFO: [Project 1-313] Project file moved from 'C:/Xilinx/Vivado-Workspaces/miniProject2.0_PL1/ProjectLabUno' since last save.WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.gen/sources_1', nor could it be found using path 'C:/Xilinx/Vivado-Workspaces/miniProject2.0_PL1/ProjectLabUno/miniProject1_PL1.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Aidan/Documents/miniProject1_PL1/miniProject1_PL1.ip_user_files', nor could it be found using path 'C:/Xilinx/Vivado-Workspaces/miniProject1_PL1/miniProject1_PL1.ip_user_files'.
+SScanning sources...FFinished scanning sourcesINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1006.531 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Tue Feb  2 14:32:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Feb  2 14:35:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Feb  2 14:38:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 1006.531 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2369.570 ; gain = 1363.039
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Feb  2 15:41:21 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Feb  2 15:42:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+file mkdir C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v w ]
+add_files -fileset sim_1 C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v
+update_compile_order -fileset sim_1
+set_property used_in_implementation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_synthesis false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_synthesis true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_synthesis false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2432.445 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'reset' is not permitted [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2432.445 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 2432.445 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'reset' is not permitted [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'reset' is not permitted [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'reset' is not permitted [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'reset' is not permitted [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [VRFC 10-2458] undeclared symbol reset, assumed default net type wire [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.miniProjectSource
+Compiling module xil_defaultlib.PWM_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PWM_test_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/xsim.dir/PWM_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/xsim.dir/PWM_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Feb  2 16:01:39 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  2 16:01:39 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2441.844 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWM_test_behav -key {Behavioral:sim_1:Functional:PWM_test} -tclbatch {PWM_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source PWM_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWM_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 2469.266 ; gain = 27.422
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 31
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 32
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 31
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 31
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 31
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 31
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 32
+add_bp {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} 32
+remove_bps -file {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v} -line 32
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Feb  2 16:06:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2481.539 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [VRFC 10-2458] undeclared symbol reset, assumed default net type wire [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:32]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:37]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:52]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:56]
+ERROR: [VRFC 10-2865] module 'PWM_test' ignored due to previous errors [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [VRFC 10-2458] undeclared symbol reset, assumed default net type wire [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:36]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:41]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:51]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register reset is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:55]
+ERROR: [VRFC 10-2865] module 'PWM_test' ignored due to previous errors [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Feb  2 16:09:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.miniProjectSource
+Compiling module xil_defaultlib.PWM_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PWM_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWM_test_behav -key {Behavioral:sim_1:Functional:PWM_test} -tclbatch {PWM_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: [Simulator 45-24] Previous breakpoint at line 31 in file 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v' not restored because it is no longer a breakable line.
+source PWM_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWM_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2482.266 ; gain = 0.727
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property used_in_implementation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+set_property used_in_synthesis false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+update_compile_order -fileset sources_1
+set_property used_in_synthesis true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+set_property used_in_implementation true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj PWM_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniProjectSource
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+"xelab -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0fdae8646eeb412588fff1008caa3e0f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_test_behav xil_defaultlib.PWM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'in3' is not connected on this instance [C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sim_1/new/PWM_test.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.miniProjectSource
+Compiling module xil_defaultlib.PWM_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PWM_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWM_test_behav -key {Behavioral:sim_1:Functional:PWM_test} -tclbatch {PWM_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source PWM_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWM_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2485.621 ; gain = 3.117
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property used_in_synthesis true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+set_property used_in_implementation true [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+update_compile_order -fileset sources_1
+set_property used_in_implementation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+set_property used_in_simulation false [get_files  C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.srcs/sources_1/new/miniProjectSource.v]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Feb  2 16:22:36 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Feb  2 16:23:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Feb  2 16:24:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2487.129 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A38140A
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  3 21:59:30 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  3 22:03:23 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  3 22:05:49 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Feb  3 22:07:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb  3 22:11:19 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb  3 22:13:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb  3 22:31:08 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+[Wed Feb  3 22:31:08 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 2518.469 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  3 23:36:53 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Feb  3 23:38:03 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb  3 23:39:09 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 2525.449 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb  3 23:43:11 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  3 23:43:26 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/runme.log
+close_hw_manager
+launch_runs impl_1 -jobs 4
+[Wed Feb  3 23:44:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb  3 23:45:18 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 2531.301 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38140A
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A38140A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  4 11:19:23 2021...
