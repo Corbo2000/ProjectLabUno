@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Fri Feb  5 00:27:28 2021
-| Host             : DESKTOP-8K8TP56 running 64-bit major release  (build 9200)
+| Date             : Sat Feb  6 12:53:30 2021
+| Host             : LAPTOP-8L0GKIJT running 64-bit major release  (build 9200)
 | Command          : report_power -file miniProjectSource_power_routed.rpt -pb miniProjectSource_power_summary_routed.pb -rpx miniProjectSource_power_routed.rpx
 | Design           : miniProjectSource
 | Device           : xc7a35ticpg236-1L
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      105 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       41 |     20800 |            0.20 |
-|   CARRY4       |    <0.001 |       14 |      8150 |            0.17 |
-|   Register     |    <0.001 |       42 |     41600 |            0.10 |
+| Slice Logic    |    <0.001 |      153 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       51 |     20800 |            0.25 |
+|   CARRY4       |    <0.001 |       21 |      8150 |            0.26 |
+|   Register     |    <0.001 |       71 |     41600 |            0.17 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       98 |       --- |             --- |
-| I/O            |     0.011 |       30 |       106 |           28.30 |
+| Signals        |    <0.001 |      144 |       --- |             --- |
+| I/O            |     0.011 |       31 |       106 |           29.25 |
 | Static Power   |     0.062 |          |           |                 |
 | Total          |     0.074 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

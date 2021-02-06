@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.tcl"
+  variable script "D:/GitHub/ProjectLabUno/miniProject1_PL1.runs/impl_1/miniProjectSource.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,10 +123,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
   open_checkpoint miniProjectSource_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.cache/wt [current_project]
+  set_property webtalk.parent_dir D:/GitHub/ProjectLabUno/miniProject1_PL1.cache/wt [current_project]
 set_property TOP miniProjectSource [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

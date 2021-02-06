@@ -31,6 +31,7 @@
 module miniProjectSource(
     input clock,
     input in0,in1,in2,in3,in4,in5,in6,in7,
+    input btnC,
     output PWM,
     input wire control1,control2,
     output reg a,b,c,d,e,f,
@@ -49,7 +50,7 @@ module miniProjectSource(
     //   (2)
     reg [21:0] counter;
     reg [21:0] width;
-    //reg [27:0] safety_count;
+    reg [27:0] safety_count;
     reg temp_PWM;
     reg temp_curr;
     integer speed;
@@ -57,7 +58,7 @@ module miniProjectSource(
     integer safety;
     
     initial begin
-    safety = 1;
+    safety = 0;
     counter = 0;
     width = 0;
     temp_PWM = 0;
@@ -72,7 +73,7 @@ module miniProjectSource(
         
         if (counter > 1666666)
             counter <= 0;
-        else if (safety == 1)
+        else if (safety == 0)
             counter <= counter +1;
         
         /*if(safety == 0)
@@ -93,13 +94,23 @@ module miniProjectSource(
         else
             count <= count + 1;
             
-        /*if (safety_count > 100000000)
-            begin
-            safety_count <= 0;
-            safety = 1;
-            end  
-        else if (safety == 0)
-            safety_count <= safety_count + 1;*/
+        if (control1 || control2) begin
+        if(safety_count > 7000000)begin
+            safety=1;
+        end
+        else begin
+            safety_count <= safety_count +1;
+        end
+        end
+    
+        else begin 
+            safety_count = 0;
+            safety = safety;
+        if(btnC) begin
+            safety = 0;
+        end
+        end
+        
             
     end
     
@@ -108,17 +119,11 @@ module miniProjectSource(
     reg [3:0] an_temp;
 always @ (*)
 begin
-    if (control1 || control2) begin
-    safety = 0;
-    end
-    else begin 
-    safety = 1;
-    end
  
   case(count[N-1:N-2]) //using only the 2 MSB's of the counter 
    2'b00 :  //When the 2 MSB's are 00 enable the fourth display
     begin
-        if (safety == 0) begin
+        if (safety == 1) begin
             sseg = 10;
             end
         else begin
@@ -130,7 +135,7 @@ begin
    
    2'b01:  //When the 2 MSB's are 01 enable the third display
     begin
-        if (safety == 0) begin
+        if (safety == 1) begin
             sseg = 1;
             end
         else begin
@@ -207,14 +212,14 @@ assign {s6, s5, s4, s3, s2, s1, s0} = sseg_temp;
         d = temp;
         end  
         
-    if (in6 && safety == 1) begin
+    if (in6 && safety == 0) begin
         e = temp_PWM;
         end
     else begin
         e = temp2;
         end
         
-    if (in7 && safety == 1) begin
+    if (in7 && safety == 0) begin
         f = temp_PWM;
         end
     else begin

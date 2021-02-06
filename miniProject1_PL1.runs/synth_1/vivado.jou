@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Feb  5 00:23:14 2021
-# Process ID: 19920
-# Current directory: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1
+# Start of session at: Sat Feb  6 12:51:27 2021
+# Process ID: 8892
+# Current directory: D:/GitHub/ProjectLabUno/miniProject1_PL1.runs/synth_1
 # Command line: vivado.exe -log miniProjectSource.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source miniProjectSource.tcl
-# Log file: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1/miniProjectSource.vds
-# Journal file: C:/Users/Aidan/Documents/vivado/ProjectLabUno/miniProject1_PL1.runs/synth_1\vivado.jou
+# Log file: D:/GitHub/ProjectLabUno/miniProject1_PL1.runs/synth_1/miniProjectSource.vds
+# Journal file: D:/GitHub/ProjectLabUno/miniProject1_PL1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source miniProjectSource.tcl -notrace
